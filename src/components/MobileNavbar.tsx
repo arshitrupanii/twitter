@@ -1,5 +1,3 @@
-"use client";
-
 import {
   BellIcon,
   HomeIcon,
@@ -54,7 +52,7 @@ async function MobileNavbar() {
               </Link>
             </Button>
 
-            {isSignedIn ? (
+            {isSignedIn && user ? (
               <>
                 <Button variant="ghost" className="flex items-center gap-3 justify-start" asChild>
                   <Link href="/notifications">
